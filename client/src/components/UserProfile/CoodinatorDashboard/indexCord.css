@@ -1,0 +1,264 @@
+:root {
+    --yellow: linear-gradient(180deg, #f8d49a -146.42%, #fad79d -46.42%);
+    --orange: #fca61f;
+    --black: #242d49;
+    --gray: #788097;
+    --purple: linear-gradient(180deg, #bb67ff 0%, #c484f3 100%);
+    --pink: #ff919d;
+    --glass: rgba(255, 255, 255, 0.54);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --activeItem: #f799a354;
+  }
+  
+  .CoodinatorDashboard {
+    /* padding: 0.5rem 3.5rem; */
+    color: var(--black);
+    background: linear-gradient(
+      106.37deg,
+      #9db1f6 29.63%,
+      #f9bbbd 51.55%,
+      #f1b8ee 90.85%
+    );
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .CordGlass {
+    display: grid;
+    height: 97%;
+    width: 97%;
+    background: var(--glass);
+    border-radius: 2rem;
+    gap: 16px;
+    grid-template-columns: 11rem auto 20rem;
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .CordGlass {
+      grid-template-columns: 10% 50% auto;
+      overflow-y: scroll;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .CordGlass {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 4rem;
+    transition: all 300ms ease;
+  }
+  /* logo */
+  .bars {
+    display: none;
+  }
+  
+  .logo {
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 22px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+  }
+  .logo > span > span {
+    color: var(--pink);
+  }
+  
+  .logo > img {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  /* menu */
+  .menu {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .menuItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 0.7rem;
+    font-size: 14px;
+  }
+  
+  .menuItem:hover {
+    cursor: pointer;
+  }
+  
+  .menu .menuItem:last-child {
+    position: absolute;
+    bottom: 2.3rem;
+    width: 100%;
+  }
+  
+  .active {
+    background: var(--activeItem);
+    margin-left: 0;
+  }
+  .active::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background: var(--pink);
+    margin-right: calc(1rem - 8px);
+  }
+  
+  /* Tablets */
+  @media screen and (max-width: 1200px) {
+    .menuItem > span {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      z-index: 9;
+      background: #ffe0e0;
+      width: 55%;
+      padding-right: 1rem;
+      height: 100%;
+    }
+    .menuItem > span {
+      display: block;
+    }
+    .logo {
+      display: flex;
+    }
+    .menu .menuItem:last-child {
+      position: relative;
+      margin-top: 6rem;
+    }
+    .bars {
+      display: flex;
+      position: fixed;
+      top: 2rem;
+      left: 60%;
+      background: #ffe0e0;
+      padding: 10px;
+      border-radius: 10px;
+      z-index: 9;
+    }
+    .close {
+      left: -60%;
+    }
+  }
+  
+  .MainDashCord {
+    /* padding-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    max-height: 48rem;
+    justify-content: space-evenly;
+    margin-top: 85px 
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .MainDashCord {
+      justify-content: flex-start;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .MainDashCord {
+      align-items: center;
+    }
+  }
+  
+  .MuiTableRow-root > * {
+    padding: 10px;
+  }
+  
+  .Table-headCord {
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    border-collapse: collapse;
+    background: lavender;
+    border-radius: 44px;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+  }
+
+  .Table-scrollableCord {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }  
+  
+  .Table-bodyCord {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    max-height: 330px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  
+  .MuiTableRow-root.MuiTableRow-head > * {
+    font-weight: bold !important;
+    /* white-space: nowrap; */
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .TableCord td,
+  th {
+    border: none !important;
+  }
+  
+  .Table:first-child {
+    border-radius: 0.7rem !important;
+  }
+  .status {
+    padding: 8px;
+    border-radius: 9px;
+  }
+  
+  .Details {
+    color: #00b5ff !important;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .TableCord {
+      width: 170%;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .TableCord {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 23rem;
+    }
+  }
+  

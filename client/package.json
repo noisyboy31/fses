@@ -1,0 +1,73 @@
+{
+  "name": "fses",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@heroicons/react": "^2.0.18",
+    "@iconscout/react-unicons": "^2.0.2",
+    "@material/circular-progress": "^14.0.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "apexcharts": "^3.41.0",
+    "axios": "^1.4.0",
+    "blob": "^0.1.0",
+    "buffer": "^6.0.3",
+    "chart.js": "^4.3.0",
+    "fast-csv": "^4.3.6",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.2.9",
+    "heroicons": "^2.0.18",
+    "jwt-decode": "^3.1.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.9.0",
+    "react-router-dom": "^6.13.0",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
+    "tss-react": "^4.8.6",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5",
+    "yup": "^1.2.0",
+    "zustand": "^4.1.5"
+  },
+  "scripts": {
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  }
+}
