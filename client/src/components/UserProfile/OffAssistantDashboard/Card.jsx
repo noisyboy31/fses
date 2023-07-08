@@ -172,6 +172,10 @@ function ExpandedCard({ param, setExpanded }) {
             style={{
               background:
                 "linear-gradient(106.37deg, #ffcfd1 51.55%, #f3c6f1 90.85%)",
+              fontFamily: 'inherit',
+              fontSize: '100%',
+              fontWeight: 'inherit',
+              lineHeight: 'inherit',
               borderRadius: "20px",
               padding: "10px 20px",
               color: "black",
@@ -195,6 +199,10 @@ function ExpandedCard({ param, setExpanded }) {
             style={{
               background:
                 "linear-gradient(106.37deg, #ffcfd1 51.55%, #f3c6f1 90.85%)",
+              fontFamily: 'inherit',
+              fontSize: '100%',
+              fontWeight: 'inherit',
+              lineHeight: 'inherit',
               borderRadius: "20px",
               padding: "10px 20px",
               color: "black",
@@ -235,7 +243,7 @@ function ExpandedCard({ param, setExpanded }) {
             </div>
           ))}
       </div>
-      <div style={{ background: "pink", borderRadius: "50px" }}>
+      <div style={{ background: "white", borderRadius: "50px" }}>
         <UilTimes onClick={setExpanded} />
       </div>
     </motion.div>

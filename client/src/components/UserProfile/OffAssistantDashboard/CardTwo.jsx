@@ -256,7 +256,7 @@ function ExpandedCard({ param, setExpanded }) {
         </div>
       </div>
       <span>Last 24 hours</span>
-      <div style={{ background: "pink", borderRadius: "50px" }}>
+      <div style={{ background: "white", borderRadius: "50px" }}>
         <UilTimes onClick={setExpanded} />
       </div>
     </motion.div>

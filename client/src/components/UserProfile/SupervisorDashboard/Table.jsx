@@ -289,7 +289,6 @@ export default function BasicTable(props) {
     setUpdatedValues([...requiredUpdateValues, ...updateRecords]);
   };
 
-  //console.log("formattedData", formattedData);
   const handleFormSubmit = async () => {
     const requiredUpdateRecordNo = [
       ...new Set(updatedValues.map((item) => item.recordNo)),
@@ -326,15 +325,18 @@ export default function BasicTable(props) {
 
   return (
     <div className="TableSup">
-      <h2 style={{marginBottom: "12px", color:"#ff919d"}}>
-      Welcome Back, {roles.join(" ")} {username}
+      <h2 style={{marginBottom: "12px", marginTop: "14px", color:"#ff919d", fontSize: "2.3vmin"}}>
+      <span style={{color: 'black'}}>Welcome Back,</span> {roles.join(" ")} {username}
       </h2>
       <Toaster />
+      <h1 style={{marginBottom: "6px",marginTop: "14px", color:"#ff919d", fontSize: "2.3vmin", fontWeight: "bold"}}>
+      <span style={{color: 'black'}}>Report Table</span>
+      </h1>
       <TableContainer
         component={Paper}
         style={{
           boxShadow: "0px 13px 20px 0px #80808029",
-          borderRadius: "44px", background: "hotpink", maxHeight: "500px", maxWidth: "1188px",
+          borderRadius: "44px", background: "hotpink", maxHeight: "500px", maxWidth: "1188px", minWidth: "600px",
         }}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead className="Table-headSup">
@@ -476,12 +478,12 @@ export default function BasicTable(props) {
 
           <Grid item xs={12} sm={6} md={4} lg={12}>
             <FormControl fullWidth>
-              <label htmlFor="currentSem" style={{fontWeight:"inherit", fontSize:"bold", textAlign: "center", fontSize: "17px"}}>PROPOSAL:</label>
+              <label htmlFor="proposal" style={{fontWeight:"inherit", fontSize:"bold", textAlign: "center", fontSize: "17px"}}>PROPOSAL:</label>
               <textarea
                 style={{minlength:"10", maxlength:"40", background: 'transparent', border: "3px solid #ff919d", borderRadius: "20px"}}
                 type="text"
-                id="currentSem"
-                name="currentSem"
+                id="proposal"
+                name="proposal"
                 onChange={(e) => handleInputChange("PROPOSAL", e.target.value)}
               />
             </FormControl>

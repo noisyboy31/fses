@@ -16,11 +16,11 @@
   color: var(--black);
   background: linear-gradient(
     106.37deg,
-    #f799a354 29.63%,
-      #a1e0f2 51.55%,
-      #fdb0f9 90.85%
+    #ffe1bc 29.63%,
+    #ffcfd1 51.55%,
+    #f3c6f1 90.85%
   );
-  height: 120vh;
+  height: 110vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@
 
 .SuperGlass {
   display: grid;
-  height: 97%;
+  height: 98%;
   width: 97%;
   background: var(--glass);
   border-radius: 2rem;
@@ -171,7 +171,7 @@
   /* padding-top: 1rem; */
   display: flex;
   flex-direction: column;
-  max-height: 48rem;
+  margin-top: 2rem;
   justify-content: space-evenly;
 }
 
@@ -198,6 +198,7 @@
   border-collapse: collapse;
   background: lavender;
   border-radius: 44px;
+  border: 2px solid white;
   position: sticky;
   top: 0;
   white-space: nowrap

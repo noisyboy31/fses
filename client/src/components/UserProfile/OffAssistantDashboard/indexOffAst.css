@@ -202,6 +202,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 .Table-container {
@@ -291,7 +292,6 @@
   word-break: break-word; /* Added word-break property */
   border-bottom: 1px solid #ccc;
   white-space: nowrap;
-  text-align: center;
 }
 
 .Table-row-body {

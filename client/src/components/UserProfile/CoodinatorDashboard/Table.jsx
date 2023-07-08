@@ -90,7 +90,7 @@ export default function BasicTable() {
 
   const generateExaminerWarningMessage = (deniedRecordNo) => {
     const warningMessage = deniedRecordNo.forEach((recordNo) =>
-      toast.error(`${recordNo} : Main Supervisor | Co-Supervisor | Examiner is Professor.`)
+      toast.error(`${recordNo} : Main Supervisor | Co-Supervisor | Examiner is not Professor.`)
     );
   };
 
@@ -244,10 +244,10 @@ export default function BasicTable() {
 
   return (
     <div style={{marginTop : "2rem"}} className="TableCord">
-      <h2 style={{marginBottom: "12px", color:"#ff919d"}}>
-      Welcome Back, DR HAZLIFAH BINTI MOHD RUSLI
-      </h2>
       <Toaster />
+      <h1 style={{marginBottom: "6px",marginTop: "14px", color:"#ff919d", fontSize: "2.3vmin", fontWeight: "bold"}}>
+      <span style={{color: 'black'}}>Report Table</span>
+      </h1>
       <TableContainer
         component={Paper}
         style={{
@@ -259,11 +259,11 @@ export default function BasicTable() {
             <TableHead className="Table-headCord">
             <TableRow>
                 <TableCell align="left">NO</TableCell>
-                <TableCell align="left">MAIN SUPERVISOR</TableCell>
                 <TableCell align="left">NAME</TableCell>
                 <TableCell align="left">REVIVA</TableCell>
                 <TableCell align="left">PROGRAM</TableCell>
                 <TableCell align="left">CURRENT SEM</TableCell>
+                <TableCell align="left">MAIN SUPERVISOR</TableCell>
                 <TableCell align="left">CO-SUPERVISOR 1</TableCell>
                 <TableCell align="left">PROPOSAL</TableCell>
                 <TableCell align="left">EXAMINER 1</TableCell>
@@ -278,11 +278,11 @@ export default function BasicTable() {
                   key={index}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
                   <TableCell align="left">{item["recordNo"]}</TableCell>
-                    <TableCell align="left">{item["MAIN SUPERVISOR"]}</TableCell>
                     <TableCell align="left">{item["NAME"]}</TableCell>
                     <TableCell align="left">{item["REVIVA"]}</TableCell>
                     <TableCell align="left">{item["PROGRAM"]}</TableCell>
                     <TableCell align="left">{item["CURRENT SEM"]}</TableCell>
+                    <TableCell align="left">{item["MAIN SUPERVISOR"]}</TableCell>
                     <TableCell align="left">{item["CO-SUPERVISOR 1"]}</TableCell>
                     <TableCell align="left">{displayLongText(item["PROPOSAL"])}</TableCell>
                     <TableCell align="left">{displayLongText(item["EXAMINER 1"])}</TableCell>

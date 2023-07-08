@@ -6,7 +6,7 @@ const MainDash = (info) => {
   const { username, roles, position } = info?.info?.info;
   return (
     <div className="MainDashSup">
-      <span style={{ fontWeight: "bold", fontSize: "30px", marginTop: "70px" }}>
+      <span style={{ fontWeight: "bold", fontSize: "30px" }}>
         Dashboard
       </span>
       <BasicTable username={username} roles={roles} position={position} />

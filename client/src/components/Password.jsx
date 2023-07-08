@@ -111,7 +111,7 @@ export default function Password() {
         <div className={styles.glass}>
           <div className="title flex flex-col items-center">
             <h4 className="text-5xl font-bold">
-              Hello {isLoading ? "" : apiData?.firstName || apiData?.username}
+              {isLoading ? "" : apiData?.firstName || apiData?.username}
             </h4>
             <span className="py-4 text-xl w-2/3 text-center text-gray-500">
             FIRST STAGE EVALUATION SYSTEM

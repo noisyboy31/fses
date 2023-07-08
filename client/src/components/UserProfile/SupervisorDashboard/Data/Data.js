@@ -1,11 +1,5 @@
 // Sidebar imports
-import {
-  UilEstate,
-  UilClipboardAlt,
-  // UilUsersAlt,
-  // UilPackage,
-  // UilChart,
-} from "@iconscout/react-unicons";
+import { UilEstate, UilClipboardAlt } from "@iconscout/react-unicons";
 
 // Sidebar Data
 export const SidebarData = [
@@ -17,16 +11,4 @@ export const SidebarData = [
     icon: UilClipboardAlt,
     heading: "File",
   },
-  // {
-  //   icon: UilUsersAlt,
-  //   heading: "Customers",
-  // },
-  // {
-  //   icon: UilPackage,
-  //   heading: "Products",
-  // },
-  // {
-  //   icon: UilChart,
-  //   heading: "Analytics",
-  // },
 ];
