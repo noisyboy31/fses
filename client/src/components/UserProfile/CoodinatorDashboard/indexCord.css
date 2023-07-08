@@ -16,11 +16,11 @@
     color: var(--black);
     background: linear-gradient(
       106.37deg,
-      #9db1f6 29.63%,
-      #f9bbbd 51.55%,
+      #ffe1bc 29.63%,
+      #ffcfd1 51.55%,
       #f1b8ee 90.85%
     );
-    height: 150vh;
+    height: 130vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,12 +168,11 @@
   }
   
   .MainDashCord {
-    /* padding-top: 1rem; */
-    display: flex;
-    flex-direction: column;
-    max-height: 48rem;
-    justify-content: space-evenly;
-    margin-top: 85px 
+   /* padding-top: 1rem; */
+   display: flex;
+   flex-direction: column;
+   margin-top: 2rem;
+   justify-content: space-evenly;
   }
   
   @media screen and (max-width: 1200px) {
@@ -199,6 +198,7 @@
     border-collapse: collapse;
     background: lavender;
     border-radius: 44px;
+    border: 2px solid white;
     position: sticky;
     top: 0;
     white-space: nowrap;

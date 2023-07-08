@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./indexOffAst.css";
-import Logo from "../imgs/logo.png";
+import Logo from "../imgs/icon.png";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
@@ -40,9 +40,7 @@ const Sidebar = () => {
         <div className="logo" style={{ fontWeight: "bold", fontSize: "20px" }}>
           <img src={Logo} alt="logo" />
           <span>
-            CODE
-            <br />
-            <span>WAVE</span>
+            <span>FSES</span>
           </span>
         </div>
 

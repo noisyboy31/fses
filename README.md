@@ -1,4 +1,4 @@
-# Welcome toFSES
+# Welcome to FIRST STAGE EVALUATION SYSTEM
 
 Hello everyone, In this project, we are going to create ** FSES**.
 We will take a look at how to create login, registration, profile, reset password route, send Mail, 
@@ -39,8 +39,12 @@ Otherwise, the project will not work.
 
 
 # Project Information 
-Step one open new terminal => cd client > npm install 
-Step two open new terminal => cd server > npm install
+Step one      => open new terminal => cd client > npm install 
+Step two      => npm run client
+Step three    => open new terminal => cd server > npm install
+Step four     => npm run server
+
+
 
 
 # fses
