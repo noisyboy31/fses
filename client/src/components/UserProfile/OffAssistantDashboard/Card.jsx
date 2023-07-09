@@ -6,6 +6,7 @@ import { motion, AnimateSharedLayout } from "framer-motion";
 import { UilTimes } from "@iconscout/react-unicons";
 import { makeStyles } from "tss-react/mui";
 import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -96,6 +97,12 @@ function ExpandedCard({ param, setExpanded }) {
       setNotification("Please upload a valid file.");
       return;
     }
+
+    if(fileInputRef.current.files[0].type === 'application/pdf'){
+      toast.error("Invalid excel form")
+      return
+    }
+    
     try {
       const formData = new FormData();
       formData.append("name", name);
@@ -140,6 +147,7 @@ function ExpandedCard({ param, setExpanded }) {
         boxShadow: param.color.boxShadow,
       }}
       layoutId="expandableCard">
+      <Toaster />
       <h1
         style={{
           alignSelf: "flex-center",

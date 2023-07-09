@@ -30,10 +30,15 @@ export const getItems = async (req, res) => {
 
 /** Add an item */
 export const addItem = asyncWrapper(async (req, res) => {
+ try{ 
   const { name } = req.body;
   const file = req.file.path;
   const item = await Reports.create({ name, file });
   res.status(201).json({ item });
+  } catch(error) {
+    console.log(error)
+    res.status(500).json({ error: "Invalid excel form" });
+  }
 });
 
 /** Download a file */
